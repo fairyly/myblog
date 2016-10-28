@@ -49,6 +49,7 @@ fairyly 的 Blog 就这么开通了。
 Windows环境测试的必须安装这些
 
 python-2.7.12+rubyinstaller-2.3.1+nodejs+rubygems-2.6.7;
+
 ```
 $ gem install jekyll bundler
 ~ $ jekyll new myblog
