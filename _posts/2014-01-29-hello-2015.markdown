@@ -2,7 +2,7 @@
 layout:     post
 title:      "Welcome to fairyly Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
+date:       2016-10-20 12:00:00
 author:     "fairyly"
 header-img: "img/post-bg-2015.jpg"
 tags:
@@ -76,4 +76,4 @@ Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Les
 
 如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
 
-—— Hux 后记于 2015.10
+—— fairyly 后记于 2016.10
