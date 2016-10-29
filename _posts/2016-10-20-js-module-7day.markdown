@@ -5,7 +5,7 @@ subtitle:   "Keynote: JavaScript Modularization Journey"
 iframe:     "http://"
 date:       2016-10-20
 author:     "fairyly"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/post-bg-js-module.jpg"
 tags:
     - 前端开发
     - JavaScript
