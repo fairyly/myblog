@@ -11,7 +11,7 @@ baseurl: "/myblog"         # for example, '/blog' if your blog hosted on 'host/b
 
 
 # SNS settings
-RSS: false
+#RSS: false
 weibo_username:     fairyilys
 zhihu_username:     fairy
 github_username:    fairyly
