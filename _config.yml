@@ -11,12 +11,12 @@ baseurl: "/myblog"         # for example, '/blog' if your blog hosted on 'host/b
 
 
 # SNS settings
-RSS: false
-#weibo_username:     fairyilys
-#zhihu_username:     fairy
-#github_username:    fairyly
+#RSS: false
+weibo_username:     fairyilys
+zhihu_username:     fairy
+github_username:    fairyly
 #twitter_username:  huxpro
-#facebook_username:  fairyly
+facebook_username:  fairyly
 
 
 
