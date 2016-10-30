@@ -28,10 +28,14 @@ tags:
 
 	5、git remote add origin https://github.com/用户名/first.git
 
-	6、git push -u origin master //把本地源码库push到github，如果出现! [rejected]  master -> master (fetch first)
-   	error: failed to push some refs to 'git@github.com:zapnaa/abcappp.git'，可以使用命令：git pull --rebase origin master，再去	git push -u origin master
+	6、git push -u origin master //把本地源码库push到github，  
+	如果出现! [rejected]  master -> master (fetch first)  
+   	error: failed to push some refs to 'git@github.com:zapnaa/abcappp.git'，  
+	可以使用命令：git pull --rebase origin master，  
+	再去git push -u origin master  
 
 ---
+
 ## github分支管理
 
 	查看分支：git branch
@@ -55,7 +59,8 @@ tags:
 
 ## github之Deployment sites
 
-	第一种方法是：在自己的github上建一个这样命名的版本库：你的github用户名.github.io;把自己做的网站页面上传进来，浏览器地址栏访问：github用户	名.github.io就会看到页面效果；
+	第一种方法是：在自己的github上建一个这样命名的版本库：你的github用户名.github.io;  
+	把自己做的网站页面上传进来，浏览器地址栏访问：github用户	名.github.io就会看到页面效果；
 	第二种方法：
 	1、在github新建仓库，如myblog,进入setting  ---》点击Launch automatic page generator--->点击页面最后的continue to layouts,
 	--->先选择一个主题，点击 publish pages。
