@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "前端必会之git"
+title:      "前端必知之git"
 subtitle:   "git，this is an Express edition"
 date:       2016-10-20
 author:     "fairyly"
