@@ -2,7 +2,7 @@
 layout:     post
 title:      "Welcome to fairyly Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2016-10-20 23:00:00
+date:       2016-10-19 23:00:00
 author:     "fairyly"
 header-img: "img/post-bg-2015.jpg"
 tags:
