@@ -2,7 +2,7 @@
 layout:     keynote
 title:      "JavaScript 模块化七日谈"
 subtitle:   "Keynote: JavaScript Modularization Journey"
-iframe:     "http://huangxuan.me/js-module-7day/"
+iframe:     "//huangxuan.me/js-module-7day/"
 date:       2016-10-20
 author:     "fairyly"
 header-img: "img/post-bg-js-module.jpg"
