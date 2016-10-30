@@ -13,7 +13,25 @@ tags:
 >
     describe hexo deployment and markdown grammar
 
-## Hexo blog
+## Hexo blog 
+
+        npm install hexo-cli -g
+        hexo init blog
+        cd blog
+        npm install
+        hexo server  或者hexo server -p 5000更改端口号，浏览器打开网址http://localhost:5000/
+
+
+        配置 Deployment
+   	
+        deploy:
+            type=git
+            repo:https://github.com/fairyly/仓库名
+            branch: gh-pages
+
+        hexo d部署到github
+
+## markdown语法
       
       经常见到的以扩展名.md结尾的文件就是用markdown编写的文件：
 
