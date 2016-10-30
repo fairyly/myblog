@@ -10,7 +10,8 @@ tags:
     - markdown
 ---
 
-
+>
+    describe hexo deployment and markdown grammar
 
 ## Hexo blog
       
