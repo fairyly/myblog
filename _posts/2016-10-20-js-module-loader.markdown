@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Example Post with Code Highlight"
+title:      "CommonJS，RequireJS，SeaJS"
 subtitle:   "CommonJS，RequireJS，SeaJS 归纳笔记"
 date:       2016-10-20
 author:     "fairyly"
