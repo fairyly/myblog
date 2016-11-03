@@ -21,12 +21,22 @@ tags:
 
 ---
 
-## 对象级插件:
+## 对象级插件:即给jQuery对象添加方法
+
+    格式：;(function($){
+            $.fn.extend({
+                "pluginname":function(pram){
+                     //do sonmething 
+                }
+            });
+        })(jQuery);
+        
+    插件调用：$("class").plugin();
 
 ```
     ;(function($){
         $.fn.extend({
-            "foucuscolor":function(li_col){
+            "focuscolor":function(li_col){
                   var def_col="#ccc";
                   var les_col="#fff";
                   li_col=(li_col==undefined)? def_col:li_col;
@@ -43,13 +53,24 @@ tags:
         });
     })(jQuery);
     
+    调用：$("p").focuscolor("red");
+    
 ```
 
 ---
 
-## 类别级插件
+## 类别级插件：即给jQuery添加新的全局函数，相当于给jQuery类本身添加方法
+
+    格式：;(function($){
+        $.extend({
+            "pluginname":function(pram){
+                 //do sonmething 
+            }
+        });
+    })(jQuery);
    
-   
+    插件调用：$.plugin();
+    
 ```
     ;(function($){
        $.extend({
@@ -70,10 +91,11 @@ tags:
     })(jQuery);
     
 ```
-   
+
+    调用： $.add($("input1").val(),$("input2").val())
+    
+    
    ---
-
-
 
 
  
