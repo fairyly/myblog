@@ -23,7 +23,7 @@ tags:
 
 ## 对象级插件:
 
-    ```
+```
     ;(function($){
         $.fn.extend({
             "foucuscolor":function(li_col){
@@ -42,14 +42,15 @@ tags:
             }
         });
     })(jQuery);
-    ```
+    
+```
 
 ---
 
 ## 类别级插件
    
    
-   ```
+```
     ;(function($){
        $.extend({
               "add":function(pr,prt){
@@ -67,7 +68,8 @@ tags:
 
        })
     })(jQuery);
-   ```
+    
+```
    
    ---
 
