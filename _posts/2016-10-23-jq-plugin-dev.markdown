@@ -90,9 +90,10 @@ tags:
        })
     })(jQuery);
     
+    调用： $.add($("input1").val(),$("input2").val())
+    
 ```
-
-    调用： $.add($("input1").val(),$("input2").val())
+    
     
     
    ---
