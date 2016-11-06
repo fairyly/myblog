@@ -22,6 +22,8 @@ tags:
 ## 微信的小程序
 
 ❥ღ❣♔♕♖♚♛♜☀☁☂☃☼☽☾♨❄❅❆★☆✦✪✫✿
+
+---
     
         既然这么火，那就学习一下，这段也在学习微信小程序的开发，
         
@@ -76,6 +78,8 @@ tags:
         3、不支持canvas的API；  
         4、不支持ajax,可以用微信的API：wx.request(),请求外部API接口好像有些问题;  
         5、不支持eval();  
+        
+        
 ---
 
 ## 微信小程序运行环境
@@ -110,6 +114,8 @@ tags:
     13、不支持skew
     14、不支持混合模式
     15、支持Creator组件：Label，Sprite,Button,Widget,Layout,Animation,其他都不支持
+    
+    
 ---
 
 
@@ -201,5 +207,8 @@ tags:
     我还是觉得像webview，但是组件比如map，canvas什么的用的是原生view，然后盖在webview上的感觉。
     
 ```
+
+---
+
 
 >>> working study......
