@@ -213,8 +213,7 @@ tags:
 
 >>> working study......
 
-
-## problem：
+---
 
     app.json中页面注册顺序问题：
         有时候已经在app.json中pages注册了多个页面，
