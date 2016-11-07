@@ -214,19 +214,20 @@ tags:
 >>> working study......
 
 ---
+##---problem
+#
+app.json中页面注册顺序问题：  
+    有时候已经在app.json中pages注册了多个页面，  
+    运行时候会提示没有注册这些页面，  
+    需要把这些注册的页面顺序向index前调换下；  
+    
+tabBar设置不显示：  
+    还有使用tabbarde时候，在app.json中注册后，  
+    tab链接对应的注册页面顺序也要往前调调，不然会无法显示tabbar;  
+    微信小程序的逻辑是"pages"中的第一个页面是首页，  
+    也就是程序启动后第一个显示的页面，  
+    如果tabBar的list的pagePath指定的页面都不是pages的第一个，  
+    当然也就不会显示tabBar了。  
 
-    app.json中页面注册顺序问题：
-        有时候已经在app.json中pages注册了多个页面，
-        运行时候会提示没有注册这些页面，
-        需要把这些注册的页面顺序向index前调换下；
-    
-    tabBar设置不显示：
-        还有使用tabbarde时候，在app.json中注册后，
-        tab链接对应的注册页面顺序也要往前调调，不然会无法显示tabbar;
-        微信小程序的逻辑是"pages"中的第一个页面是首页，
-        也就是程序启动后第一个显示的页面，
-        如果tabBar的list的pagePath指定的页面都不是pages的第一个，
-        当然也就不会显示tabBar了。
-    
-    
->>>
+
+>>>come on!
