@@ -216,7 +216,8 @@ tags:
 ---
 
 ##problem
-#
+
+
 app.json中页面注册顺序问题：  
     有时候已经在app.json中pages注册了多个页面，  
     运行时候会提示没有注册这些页面，  
@@ -230,5 +231,32 @@ tabBar设置不显示：
     如果tabBar的list的pagePath指定的页面都不是pages的第一个，  
     当然也就不会显示tabBar了。  
 
+页面图片src用数据绑定,显示图片的时候，pages中注册页面加载顺序也得变下才会显示；
+
+canvas绘制图片的时候模拟器不会绘制显示出来，真机可以；包括上传的图片也可以绘制，取得是src,即res.tempFilePaths[0]
+
+input模拟器与真机差异：模拟器样式可以有边框，文字居中；真机没有边框，文字没有居中，一直左对齐
+
+view设置fixed，里面一个input，bottom设置0，输入法键盘唤出总会遮挡input一部分；
+
+
+post 的时候把Content-Type 这个去掉 就行了 
+
+```
+    wx.request({
+      url: 'https://xxxxxx',
+          data: e.detail.value,
+         method:'POST',
+     // header: {
+     //     'Content-Type':'application/x-www-from-urlencoded'
+        // },
+    success: function(res) {
+                console.log(res.data)
+         }
+     })
+     
+```
+ 
+注释掉成功拿到参数，不注释数据就是空。
 
 >>>come on!
