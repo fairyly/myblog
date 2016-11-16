@@ -261,4 +261,34 @@ tags:
 8、有时候会出现appservice错误，导致页面无法显示，
    解决方法：**就是在设置里面设置下，不使用任何代理**
 
+9、官方的canvas一个接口过于简单：wx.canvasToTempFilePath(OBJECT)  
+   把当前画布的内容导出生成图片，并返回文件路径  
+   完整的如下（有点问题，模拟器直接fail，真机可以测试到文件路径，却找不到文件）：
+   
+``` 
+    var that=this;
+    wx.canvasToTempFilePath({ 
+        canvasId: 1,
+        success: function (res) {
+                console.log(res.tempFilePath); 
+                 that.setData({filesave:res.tempFilePath})
+                wx.saveFile({
+                  tempFilePath: res.tempFilePath,
+                  success: function success(res) {
+                    console.log('saved::' + res.savedFilePath);
+                    that.setData({filesave:res.savedFilePath})
+                  },
+                  complete: function fail(e) {
+                    console.log(e.errMsg);
+                  }
+                }); 
+         },
+        fail: function (res) {
+            console.log(res);  
+            that.setData({filesave:res.errMsg})  
+        }
+      });
+```
+
+
 >>>come on!
