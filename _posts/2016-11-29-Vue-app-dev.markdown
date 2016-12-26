@@ -97,6 +97,8 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
 
 >   
    安装Vue-cli命令：
+   
+   ```
     # 全局安装 vue-cli
     $ npm install --global vue-cli
     # 创建一个基于 webpack 模板的新项目
@@ -105,9 +107,12 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
     $ cd my-project
     $ npm install
     $ npm run dev
+    ```
+    
     这样一个很简单的Vue小项目已经完成。默认服务器的端口是8080， 
     如果需要改变端口号，可以到src/config/index.js文件中port端口号就可以；
     
+    ```
     dev: {
         env: require('./dev.env'),
         port: 8080,
@@ -116,10 +121,12 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
         proxyTable: {},
         cssSourceMap: false
       }
-
+     ```
 
     安装Mint UI命令：
     文档：http://mint-ui.github.io/docs/#!/zh-cn2
+    
+    ```
     // install# for Vue 1.x
     npm install mint-ui@1 -S
     # for Vue 2.0
@@ -127,18 +134,24 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
 
     // import all components
     import Vue from 'vue';import Mint from 'mint-ui';Vue.use(Mint);
-
+   ```
     安装Vue-router命令：文档：http://router.vuejs.org/zh-cn/
     npm install vue-router如果在一个模块化工程中使用它，必须要通过 Vue.use() 明确地安装路由功能：
+    
+    ```
     import Vue from 'vue'
     import VueRouter from 'vue-router'
     Vue.use(VueRouter)
+    ```
       安装Vuex命令：Vuex文档：http://vuex.vuejs.org/zh-cn/
+      
+      ```
       npm install vuex在一个模块化的打包系统中，您必须显式地通过 Vue.use() 来安装 Vuex：状态管理模式
 
       import Vue from 'vue'
       import Vuex from 'vuex'
       Vue.use(Vuex)
+      ```
 
       Vuex是Vue的状态管理模式，每一个 Vuex 应用的核心就是 store（仓库）。
       "store" 基本上就是一个容器，它包含着你的应用中大部分的状态(即 state)；
@@ -146,13 +159,19 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
       State：单一状态树
       从 store 实例中读取状态最简单的方法就是在计算属性中返回某个状态；
       初始 state 对象：
+      
+      ```
       // 如果在模块化构建系统中，请确保在开头调用了 Vue.use(Vuex)
       const store = new Vuex.Store({
         state: {
           count: 0
         }
       })
+      ```
+      
       当一个组件需要获取多个状态时候，使用 mapState 辅助函数帮助我们生成计算属性；
+      
+      ```
       computed: mapState({
           // 箭头函数可使代码更简练
           count: state => state.count,
@@ -160,13 +179,20 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
           // 传字符串参数 'count' 等同于 `state => state.count`
           countAlias: 'count'
       }）
+      ```
+      
       当映射的计算属性的名称与 state 的子节点名称相同时，我们也可以给 mapState 传一个字符串数组。如：
+      
+      ```
       computed: {
            ...mapState(['headNav'])
          }
       Getters
+      ```
 
       Vuex 允许我们在 store 中定义『getters』（可以认为是 store 的计算属性）。Getters 接受 state 作为其第一个参数：
+      
+      ```
 
       const store = new Vuex.Store({
         state: {
@@ -200,12 +226,16 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
           isPlay: state=>state.isPlay
         }
       }）
+      ```
+      
       mapGetters 辅助函数仅仅是将 store 中的 getters 映射到局部计算属性
 
       Mutations：更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。
       Vuex 中的 mutations 非常类似于事件：每个 mutation 都有一个字符串的 
       事件类型 (type) 和 一个 回调函数 (handler)。
       这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数；
+      
+      ```
 
       const store = new Vuex.Store({
         state: {
@@ -284,10 +314,13 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
           }
         }
       });
+      ```
 
       可以在组件中使用 this.$store.commit('xxx')
       提交 mutation，
       或者使用 mapMutations 辅助函数将组件中的 methods 映射为 store.commit 调用（需要在根节点注入 store）。
+      
+      ```
 
       import { mapMutations } from 'vuex'export default {
         // ...
@@ -299,11 +332,15 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
             add: 'increment' // 映射 this.add() 为 this.$store.commit('increment')
           })
         }}
+        ```
+        
       Action 类似于 mutation，不同在于：
 
       Action 提交的是 mutation，而不是直接变更状态。
       Action 可以包含任意异步操作。
       Action 通过 store.dispatch 方法触发：
+      
+      ```
 
       const store = new Vuex.Store({
         state: {
@@ -404,10 +441,14 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
           }
         }
       });
+      ```
+      
       modules:
       Vuex 允许我们将 store 分割到模块（module）。
       每个模块拥有自己的 state、mutation、action、getters、
       甚至是嵌套子模块——从上至下进行类似的分割：
+      
+      ```
 
       const moduleA = {
         state: { ... },
@@ -424,6 +465,7 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
       store.state.a // -> moduleA 的状态
 
       store.state.b // -> moduleB 的状态
+      ```
       这几个state，getters， mutations，actions，modules是Vuex的接个核心概念；
 
       还有一个需要安装的插件，Vue-resource：主要用来发送http请求的时候用的；
@@ -433,6 +475,7 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
       一般的单页面应用，入口文件就是main.js,以后都是用模板组件来构建项目页面的；
       先在App.vue中添加组件，分别创建各个组件对应的模板文件，
      
+     ```
       <template>
         <div id="app">
           <!--<img src="./assets/logo.png">-->
@@ -477,7 +520,11 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
         margin-top: 5px;
       }
       </style>
+      ```
+      
       因为用到了路由，所以main.js中需要引入路由，引入前面安装的东西；
+      
+      ```
       import Vue from 'vue'
       import App from './App'
       import router from './router'
@@ -496,8 +543,11 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
         template: '<App/>',
         components: { App }
       })
+      ```
+      
       src目录下创建router目录，新建index.js路由文件，
-
+      
+      ```
       import Vue from 'vue'
       import VueRouter from 'vue-router'
       Vue.use(VueRouter)
@@ -520,10 +570,12 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
           path:'*',redirect:'/index'
         }]
       })
+      ```
+      
       src目录下新建views目录，创建各个路由的模板文件；
       src目录下新建store目录，创建index.js状态管理文件；
 
-
+      ```
       import Vue from 'vue'
       import Vuex from 'vuex'
       import VueResource from 'vue-resource'
@@ -631,7 +683,7 @@ angular已经更新到2.0，Vue也已经更新2.0了；不管是angular还是rea
       });
 
       export default store
-
+      ```
 
       src目录下新建jsons目录,  创建数据listindex.js和listplist文件； 
 
