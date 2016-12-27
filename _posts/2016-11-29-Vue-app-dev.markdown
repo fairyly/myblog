@@ -37,7 +37,7 @@ tags:
 看了尤雨溪写的学习`vue2.0`的顺序 
 
 
-** 起步 **  
+起步 
 
 1. 扎实的 `JavaScript / HTML / CSS `基本功。这是前置条件。 
 
@@ -55,7 +55,7 @@ tags:
 下面这些严格来说并不是 Vue 本身的内容，也不涵盖所有的前端工程化知识，
 但对于大型的 Vue 工程是前置条件，也是合格的『前端工程师』应当具备的知识。
 
-*前端生态/工程化
+前端生态/工程化
 
 1. 了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。
 学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注还未成为标准的提案。
@@ -76,7 +76,7 @@ CommonJS 模块规范（了解它和 ES2015 Modules 的异同），Node 包的�
 建议多搜索搜索，应该还是有质量不错的第三方教程的。 
 英文好的建议阅读 Webpack 2.0 的文档，比起 1.0 有极大的改善，但需要注意和 1.0 的不兼容之处。 
 
-*Vue 进阶
+Vue 进阶
 
 1. 有了 Node 和 Webpack 的基础，可以通过 vue-cli 来搭建基于 Webpack ， 
 并且支持单文件组件的项目了。建议用 webpack-simple 这个模板开始， 
@@ -119,14 +119,13 @@ $ npm run dev
 
 ```
 dev: {
-env: require('./dev.env'),
-port: 8080,
-assetsSubDirectory: 'static',
-assetsPublicPath: '/',
-proxyTable: {},
-cssSourceMap: false
+    env: require('./dev.env'),
+    port: 8080,
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    proxyTable: {},
+    cssSourceMap: false
 }
-
 ```
 
 安装Mint UI命令：
