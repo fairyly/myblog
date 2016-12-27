@@ -1,12 +1,11 @@
 ---
 layout:     post
 title:      "Vue2.0 开发"
-subtitle:   "vue2.0！"
+subtitle:   "vue2.0"
 date:       2016-11-29
 author:     "fairyly"
 header-img: "img/post-bg-js-module.jpg"
 tags:
-    - 前端开发
     - vue APP
 ---
 
