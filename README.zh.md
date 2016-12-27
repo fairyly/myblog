@@ -126,8 +126,6 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 内部有一个条件模板
 
 ```
- {% if tag[1].size > {{site.featured-condition-size}} %}
- 
 ```
 
 是用来做筛选过滤的.
