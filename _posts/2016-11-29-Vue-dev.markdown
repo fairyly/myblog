@@ -727,4 +727,5 @@ demo参考一个酷狗app写的，主要是熟悉使用构建工具搭建Vue应�
 
 [demo地址：](https://github.com/fairyly/myvue/tree/demo02)
 
+
 >>> come on!
