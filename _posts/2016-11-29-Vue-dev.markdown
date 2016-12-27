@@ -133,7 +133,7 @@ $ npm install --global vue-cli
 
 $ vue init webpack my-project
 
-### 安装依赖，走你
+### 安装依赖
 
 $ cd my-project
 
@@ -725,6 +725,6 @@ demo参考一个酷狗app写的，主要是熟悉使用构建工具搭建Vue应�
 
 练习使用Vue-router、Vuex、以及Mint UI，
 
-demo地址：https://github.com/fairyly/myvue/tree/demo02
+[demo地址：](https://github.com/fairyly/myvue/tree/demo02)
 
 >>> come on!
