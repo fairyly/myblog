@@ -1,0 +1,12 @@
+---
+layout:     post
+title:      "vue"
+subtitle:   "vue2"
+date:       2016-11-29
+author:     "fairyly"
+header-img: "img/post-bg-js-module.jpg"
+tags:
+    - vue开发
+    - vue
+    - vue程序
+---
