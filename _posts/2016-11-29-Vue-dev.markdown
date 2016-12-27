@@ -339,6 +339,7 @@ const store = new Vuex.Store({
 
 或者使用 mapMutations 辅助函数将组件中的 methods 映射为 store.commit 调用（需要在根节点注入 store）。
 
+```
 import { mapMutations } from 'vuex'export default {
   // ...
   methods: {
@@ -349,6 +350,7 @@ import { mapMutations } from 'vuex'export default {
       add: 'increment' // 映射 this.add() 为 this.$store.commit('increment')
     })
   }}
+```
   
 Action 类似于 mutation，不同在于：
 
@@ -358,6 +360,7 @@ Action 可以包含任意异步操作。
 
 Action 通过 store.dispatch 方法触发：
 
+```
 const store = new Vuex.Store({
   state: {
     audio: {
@@ -457,12 +460,14 @@ const store = new Vuex.Store({
     }
   }
 });
+```
 
 modules:
 
 Vuex 允许我们将 store 分割到模块（module）。
 每个模块拥有自己的 state、mutation、action、getters、甚至是嵌套子模块——从上至下进行类似的分割：
 
+```
 const moduleA = {
   state: { ... },
   mutations: { ... },
@@ -478,6 +483,7 @@ const moduleA = {
 store.state.a // -> moduleA 的状态
 
 store.state.b // -> moduleB 的状态
+```
 
 这几个state，getters， mutations，actions，modules是Vuex的接个核心概念；
 
@@ -493,6 +499,7 @@ npm install vue-resource
 
 先在App.vue中添加组件，分别创建各个组件对应的模板文件，
 
+```
 <template>
   <div id="app">
     <!--<img src="./assets/logo.png">-->
@@ -537,9 +544,11 @@ body{
   margin-top: 5px;
 }
 </style>
+```
 
 因为用到了路由，所以main.js中需要引入路由，引入前面安装的东西；
 
+```
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -558,9 +567,11 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+```
 
 src目录下创建router目录，新建index.js路由文件，
 
+```
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
@@ -583,12 +594,13 @@ const router = new VueRouter({
     path:'*',redirect:'/index'
   }]
 })
+```
 
 src目录下新建views目录，创建各个路由的模板文件；
 
 src目录下新建store目录，创建index.js状态管理文件；
 
-
+```
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VueResource from 'vue-resource'
@@ -696,7 +708,7 @@ const store = new Vuex.Store({
 });
 
 export default store
-
+```
 
 src目录下新建jsons目录,  创建数据listindex.js和listplist文件；
 
