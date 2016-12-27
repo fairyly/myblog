@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "vue"
+title:      "vue APP开发"
 subtitle:   "vue2"
 date:       2016-11-29
 author:     "fairyly"
@@ -11,7 +11,7 @@ tags:
     - vue程序
 ---
 
-## vue app开发
+## Vue2.0+Mint UI+Vue-router+Vux构建移动端APP
 
 ** 本该拼搏的年龄，却想太多，做太少！~~~~~~ **
 
