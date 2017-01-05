@@ -223,13 +223,14 @@ function Timer() {
     
  setTimeout( () => console.log(timer.seconds), 3100);    
     // 3
- ```  
+```  
  
 在构造函数内部的setInterval()内的回调函数，
 this始终指向实例化的对象，
 并获取实例化对象的seconds的属性,
 每1s这个属性的值都会增加1。
 否则最后在3s后执行setTimeOut()函数执行后输出的是0；
+
 
 ## 6.Eval函数   
 该函数执行的时候，this绑定到当前作用域的对象上
@@ -249,7 +250,7 @@ this始终指向实例化的对象，
     a();  //输出  "XL"
 ```
 
-严格模式 ‘use strict’;
+##严格模式 ‘use strict’;
 
 如果在严格模式的情况下执行纯粹的函数调用，那么这里的的   
 this 并不会指向全局，而是 undefined，这样的做法是为了消除 js 中一些不严谨的行为；
