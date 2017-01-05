@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "js中this在不同环境的指向"
+title:      js中this在不同环境的指向
 subtitle:   "this"
 date:       2016-12-29
 author:     "fairyly"
