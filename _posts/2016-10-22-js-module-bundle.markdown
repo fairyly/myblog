@@ -245,7 +245,7 @@ webpack-dev-server发送关于编译状态的消息到客户端，客户端根�
     $ set DEBUG=true
     $ webpack-dev-server
 
-## Code splitting 代码分裂
+## Code splitting 代码分割
 
     you use require.ensure to define a split point. (official document)
     // main.js
